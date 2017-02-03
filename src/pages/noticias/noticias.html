@@ -1,0 +1,37 @@
+<ion-header>
+  	<ion-navbar>
+    	<ion-title>ADhelp</ion-title> 
+      <button ion-button color="vermelho" (click)="chamadaDocao()" class="bot">QUERO AJUDAR</button>
+  	</ion-navbar>
+    
+</ion-header>
+
+
+<ion-content class="convenios">   
+    <ion-card (click)="launch('https://nacoesunidas.org/acao/alimentacao/')">
+	  	<img src="assets/img/noticia1.jpg">
+      <div class="card-subtitle">"Quase 59 milhões de dólares foram direcionados para auxiliar os países mais prejudicados durante a época de plantio"</div>
+	  </ion-card>
+
+    <ion-card (click)="launch('https://www.unicef.org/brazil/pt/media_35188.html')">
+	  	<img  src="assets/img/noticia2.jpg">
+      <div class="card-subtitle">"Mais de 2700 crianças e adolescentes foram retiradas de Alepo"</div>
+	  </ion-card>
+
+    <ion-card (click)="launch('https://nacoesunidas.org/acao/alimentacao/')">
+	  	<img src="assets/img/noticia3.jpg">
+      <div class="card-subtitle">"A UNICEF e seus parceiros continuam prestando ajuda humanitária aos mais afetados pelas tempestades de categoria 4"</div>
+	  </ion-card>
+
+	<ion-fab right bottom>
+      <button ion-fab ><ion-icon name="add"></ion-icon></button>
+      <ion-fab-list side="top">
+        <button ion-fab (click)="launch('https://www.unv.org/become-volunteer')">
+          <ion-icon name="ios-contacts"></ion-icon>
+        </button>
+        <button ion-fab>
+          <ion-icon name="md-camera" (click)="takePicture()"></ion-icon>
+        </button>
+      </ion-fab-list>
+   </ion-fab>
+</ion-content>

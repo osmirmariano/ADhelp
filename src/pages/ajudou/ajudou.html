@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ADhelp</ion-title>
+    <button ion-button color="vermelho" (click)="chamadaDocao()" class="bot">QUERO AJUDAR</button>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+      <ion-item>
+          <ion-avatar item-left>
+              <img src="assets/img/usuario1.jpg">
+          </ion-avatar>
+          <h2>Osmir Mariano</h2>
+      </ion-item>
+      <img src="assets/img/banner1.jpg">
+  </ion-card>
+
+  	<ion-fab right bottom>
+      <button ion-fab ><ion-icon name="add"></ion-icon></button>
+      <ion-fab-list side="top">
+        <button ion-fab (click)="launch('https://www.unv.org/become-volunteer')">
+          <ion-icon name="ios-contacts"></ion-icon>
+        </button>
+        <button ion-fab>
+          <ion-icon name="md-camera" (click)="takePicture()"></ion-icon>
+        </button>
+      </ion-fab-list>
+   </ion-fab>
+</ion-content>

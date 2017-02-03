@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Faça sua doação</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list radio-group>
+        <ion-list-header>
+          Escolha um valor para fazer sua doação
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>R$ 10,00</ion-label>
+          <ion-radio checked="10" value="go"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>R$ 20,00</ion-label>
+          <ion-radio value="20"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>R$ 30,00</ion-label>
+          <ion-radio value="30"></ion-radio>
+        </ion-item>
+  </ion-list>
+  <button ion-button class="btnBo" (click)="codigoDoar()">Doar</button>
+</ion-content>

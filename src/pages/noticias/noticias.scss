@@ -1,0 +1,43 @@
+page-noticias {
+    .bot{
+        float:  right;
+        position: relative;
+        margin-bottom: 0;
+    }
+    .convenios{
+        ion-card {
+            background-color: #EEEEEE;
+            position: relative;
+            text-align: center;
+        }
+
+        .card-subtitle {
+            font-size: 1.2em;
+            position: relative;
+            float: right;
+            margin-top: -30%;
+            width: 55%;
+            color: black;
+        }
+
+        img{
+            width: 40%;
+            height: 40%;
+            margin: 2%;
+        }
+    
+
+        button {
+            margin-top: 37%;
+            display: inline-block;
+            float: right;
+        }
+
+        .ajudar{
+            position: relative;
+            display: block;
+            float: right;
+            margin: left;
+        }
+    }
+}
